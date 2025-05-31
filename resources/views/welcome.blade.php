@@ -1,10 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    @livewireStyles
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <livewire:some-component />
-    @livewireScripts
+    <h1>Salama</h1>
 </body>
 </html>
