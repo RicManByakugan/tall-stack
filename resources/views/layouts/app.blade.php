@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Produits</title>
+    <meta charset="UTF-8">
+    <title>App Layout</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
-<body>
-    <div class="container">
-        @yield('content')
-    </div>
+<body class="bg-gray-100 text-gray-800">
+    {{ $slot }}
+    @livewireScripts
 </body>
 </html>

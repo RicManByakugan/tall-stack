@@ -2,17 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Livewire\Blog;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Blog::class);
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/products', function () {
     return view('products');
 });
 
-Route::get('/category', function () {
-    return view('category');
+Route::get('/products', function () {
+    return view('products');
 });
 
 Route::get('/product-controller', function () {
